@@ -64,6 +64,7 @@ function clearList() {
    displayList = [];
     drawList();
 }
+// This function clears purchased items from item list array and calls the filter function with the all parameter
 function clearPurchased() {
     for(var i=0; i<itemList.length; i++) {
         if(itemList[i].purchased) {
@@ -73,6 +74,7 @@ function clearPurchased() {
     }
     filter('all');
 }
+// This function clears unpurchased items from item list array and calls the filter function with the all parameter
 function clearUnpurchased() {
     for(var i=0; i<itemList.length; i++) {
         if(!itemList[i].purchased) {
