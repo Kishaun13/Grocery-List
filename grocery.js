@@ -64,3 +64,21 @@ function clearList() {
    displayList = [];
     drawList();
 }
+function clearPurchased() {
+    for(var i=0; i<itemList.length; i++) {
+        if(itemList[i].purchased) {
+            itemList.splice(i, 1);
+            i--;
+        }
+    }
+    filter('all');
+}
+function clearUnpurchased() {
+    for(var i=0; i<itemList.length; i++) {
+        if(!itemList[i].purchased) {
+            itemList.splice(i, 1);
+            i--;
+        }
+    }
+    filter('all');
+}
