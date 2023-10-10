@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+
+h2 {
+    color: #333;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+#myInput {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 20px auto;
+    display: block;
+}
+
+
+button {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff00dd;
+    color: white;
+
+
+    animation-name: buttonFadeInUp;
+    animation-duration: 1.5s;
+}
+
+
+button:hover {
+    background-color: #000cb3;
+}
+
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+
+li {
+    background-color: #eee;
+    margin-bottom: 2px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.purchased {
+    text-decoration: line-through;
+}
+
+body::after {
+    content: "";
+    display: block;
+    background-image: url('https://g.foolcdn.com/editorial/images/160552/grocery-bag-full-of-fresh-produce.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 1000px;
+}

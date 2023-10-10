@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery List Keeper</title>
+ <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+
+<h2>Grocery List Keeper</h2>
+
+<input type="text" id="myInput" placeholder="Add an item to your grocery list...">
+<button onclick="addItemsToList()">Add</button>
+
+<ul id="myUL">
+</ul>
+<button onclick="filter('all')" id="myUL">Show All</button>
+<button onclick="filter('purchased')" id="myUL">Show Purchased</button>
+<button onclick="filter('unpurchased')" id="myUL">Show Unpurchased</button>
+<button onclick="clearList()" id="myUL">Clear List</button>
+<script src="grocery.js"></script>
+</body>
+</html>
+
+
